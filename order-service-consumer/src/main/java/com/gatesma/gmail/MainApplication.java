@@ -20,6 +20,7 @@ public class MainApplication {
 
         OrderService orderService = applicationContext.getBean(OrderService.class);
         orderService.initOrder("1");
+        System.out.println("调用完成");
 
         System.in.read();
     }

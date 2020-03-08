@@ -11,6 +11,11 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
 
     <!-- 声明需要调用的远程服务的接口。生产远程服务代理 -->
-    <dubbo:reference interface="com.gatesma.gmail.service.UserService" id="userService"></dubbo:reference>
+    <dubbo:reference interface="com.gatesma.gmail.service.UserService"
+                     id="userService"></dubbo:reference>
+
+    <!-- 配置当前消费者的统一规则 -->
+    <dubbo:consumer check="false" timeout="0"></dubbo:consumer>
+
 
 </beans>
