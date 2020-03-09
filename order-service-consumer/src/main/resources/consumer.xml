@@ -20,7 +20,7 @@
     <!-- retries="":重试次数，不包含第一次调用，0代表不重试-->
     <!-- 幂等（设置重试次数）【查询、删除、修改】、非幂等（不能设置重试次数）【新增】 -->
     <dubbo:reference interface="com.gatesma.gmail.service.UserService"
-                     id="userService"></dubbo:reference>
+                     id="userService" version="*"></dubbo:reference>
 
     <!-- 配置当前消费者的统一规则 -->
     <!-- 配置当前消费者的统一规则：所有的服务都不检查 -->

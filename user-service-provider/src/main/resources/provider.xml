@@ -23,10 +23,10 @@
 
     <!-- 5 多版本 -->
     <dubbo:service interface="com.gatesma.gmail.service.UserService"
-                   ref="userServiceImpl01" version="1.0.0">
+                   ref="userServiceImpl02" version="2.0.0">
         <dubbo:method name="getUserAddressList" timeout="1000"></dubbo:method>
     </dubbo:service>
     <!--服务实现-->
-    <bean id="userServiceImpl01" class="com.gatesma.gmail.service.impl.UserServiceImpl"></bean>
+    <bean id="userServiceImpl02" class="com.gatesma.gmail.service.impl.UserServiceImpl2"></bean>
 
 </beans>
